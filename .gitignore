@@ -1,0 +1,14 @@
+/TestResults
+/packages
+bin
+obj
+*.suo
+*.user
+_ReSharper.Platform.Quote/
+/.vs
+PT.Platform.FlightService/Precioyviajes.FlightService.csproj.rej
+*.rej
+PT.Platform.Quote/PrecioyViajes.Quote.csproj.DotSettings
+.sonarqube/
+sonarqube.bat
+/.idea/*
