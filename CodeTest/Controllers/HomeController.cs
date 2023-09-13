@@ -52,6 +52,11 @@ namespace PruebaIngreso.Controllers
 
         public ActionResult Test3()
         {
+            return View();
+        }
+
+        public ActionResult Test4()
+        {
             var request = new TourQuoteRequest
             {
                 adults = 1,

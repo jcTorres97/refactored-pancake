@@ -1,0 +1,28 @@
+﻿@model List<Quote.Models.TourQuote>
+
+@{
+   ViewBag.Title = "Test 4";
+}
+<h2>@ViewBag.Title.</h2>
+
+<table class="table">
+   <thead>
+      <tr>
+         <th scope="col">Service Code</th>
+         <th scope="col">Net Rate</th>
+         <th scope="col">Rate</th>
+         <th scope="col">Margin</th>
+      </tr>
+   </thead>
+   <tbody>
+      @foreach (var q in Model)
+      {
+         <tr>
+            <th scope="row">@q.ContractService.ServiceCode</th>
+            <td>@q.adultNetRate</td>
+            <td>@q.adultRate</td>
+            <td>@( (1 - (q.adultNetRate / q.adultRate)) * 100)</td>
+         </tr>
+      }
+   </tbody>
+</table>
