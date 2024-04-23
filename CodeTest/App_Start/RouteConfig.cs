@@ -8,7 +8,7 @@ namespace PruebaIngreso
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.MapRoute("Test2", "Home/Test2", new { controller = "Home", action = "prueba2" });
+            routes.MapRoute("Test2", "Home/Test2", new { controller = "Home", action = "Test2" });
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
